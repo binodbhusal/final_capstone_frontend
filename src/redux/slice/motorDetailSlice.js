@@ -4,7 +4,7 @@ import axios from 'axios';
 export const fetchMotoDetailData = createAsyncThunk('motorDetail/fetchMotorDetail', async (id) => {
   try {
     const token = localStorage.getItem('token');
-    const response = await axios.get(`https://motorhubbackend.up.railway.app/api/motors/${id}`, {
+    const response = await axios.get(`https://motorhubapi.up.railway.app/api/motors/${id}`, {
       headers: {
         Authorization: `${token}`,
       },

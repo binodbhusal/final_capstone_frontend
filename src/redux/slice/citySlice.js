@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const baseApi = 'https://motorhubbackend.up.railway.app/api/stores_location';
+const baseApi = 'https://motorhubapi.up.railway.app/api/stores_location';
 
 export const fetchCityname = createAsyncThunk('citynames', async () => {
   try {

@@ -1,8 +1,8 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const MOTORS_LINK = 'https://motorhubbackend.up.railway.app/api/motors';
-const DELETE_LINK = 'https://motorhubbackend.up.railway.app/api/motors';
+const MOTORS_LINK = 'https://motorhubapi.up.railway.app/api/motors';
+const DELETE_LINK = 'https://motorhubapi.up.railway.app/api/motors';
 
 export const motorsItem = createAsyncThunk('motor', async () => {
   try {

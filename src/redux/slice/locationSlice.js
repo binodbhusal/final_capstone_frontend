@@ -5,7 +5,7 @@ export const fetchLocations = createAsyncThunk('citynames', async () => {
   try {
     const token = localStorage.getItem('token');
     const response = await axios.get(
-      'https://motorhubbackend-production.up.railway.app/api/stores_location', {
+      'https://motorhubapi.up.railway.app/api/stores_location', {
         headers: {
           'Content-Type': 'application/json',
           Authorization: `${token}`,
